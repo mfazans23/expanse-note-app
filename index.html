@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expanse Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="app-heading">Expanse Tracker</i></h1>
+      <div class="balance">
+        <h2 class="balance__text">Your Balance</h2>
+        <h2 id="balance__value" class="balance__value">$0</h2>
+      </div>
+      <div class="info-box">
+        <div class="info">
+          <div class="info__text">Income</div>
+          <div id="info__value--income" class="info__value">$0</div>
+        </div>
+        <div class="info">
+          <div class="info__text">Expanse</div>
+          <div id="info__value--expanse" class="info__value">$0</div>
+        </div>
+      </div>
+      <div class="history">
+        <h2 class="history__text">History</h2>
+        <div id="history__list" class="history__list"></div>
+      </div>
+      <div class="transaction">
+        <h2 class="transaction__text">Add New Transaction</h2>
+        <div>
+          <label>Text</label>
+          <input
+            type="text"
+            id="transaction__input--text"
+            placeholder="Enter text..."
+          />
+        </div>
+        <div>
+          <label>Amount</label>
+          <input
+            type="amount"
+            id="transaction__input--amount"
+            placeholder="Enter amount..."
+          />
+        </div>
+        <button id="transaction__button" type="submit">Add transaction</button>
+      </div>
+      
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
